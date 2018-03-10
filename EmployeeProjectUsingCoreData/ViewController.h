@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+#import "EmployeeViewController.h"
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *txtDepartmentName;
+@property (weak, nonatomic) IBOutlet UITextField *txtDepartmentID;
+- (IBAction)btnActionDepatmentDataSave:(id)sender;
 
 
 @end

@@ -16,6 +16,10 @@
 		63BE2F302023627800F7FEE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BE2F2F2023627800F7FEE7 /* main.m */; };
 		63BE2F3A2023627900F7FEE7 /* EmployeeProjectUsingCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BE2F392023627900F7FEE7 /* EmployeeProjectUsingCoreDataTests.m */; };
 		63BE2F452023627900F7FEE7 /* EmployeeProjectUsingCoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BE2F442023627900F7FEE7 /* EmployeeProjectUsingCoreDataUITests.m */; };
+		63C0227320243EF500199A18 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C0227220243EF500199A18 /* TabBarController.m */; };
+		63C0227620243F2800199A18 /* EmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C0227520243F2800199A18 /* EmployeeViewController.m */; };
+		63C0227B202470D500199A18 /* EmployeeDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C0227A202470D500199A18 /* EmployeeDataViewController.m */; };
+		63C0227E202492F000199A18 /* EmployeeDataPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C0227D202492F000199A18 /* EmployeeDataPushViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		63BE2F402023627900F7FEE7 /* EmployeeProjectUsingCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeeProjectUsingCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BE2F442023627900F7FEE7 /* EmployeeProjectUsingCoreDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeProjectUsingCoreDataUITests.m; sourceTree = "<group>"; };
 		63BE2F462023627900F7FEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C0227120243EF500199A18 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		63C0227220243EF500199A18 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		63C0227420243F2800199A18 /* EmployeeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeViewController.h; sourceTree = "<group>"; };
+		63C0227520243F2800199A18 /* EmployeeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeViewController.m; sourceTree = "<group>"; };
+		63C02279202470D500199A18 /* EmployeeDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeDataViewController.h; sourceTree = "<group>"; };
+		63C0227A202470D500199A18 /* EmployeeDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeDataViewController.m; sourceTree = "<group>"; };
+		63C0227C202492F000199A18 /* EmployeeDataPushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeDataPushViewController.h; sourceTree = "<group>"; };
+		63C0227D202492F000199A18 /* EmployeeDataPushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeDataPushViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +125,14 @@
 				63BE2F2E2023627800F7FEE7 /* Info.plist */,
 				63BE2F2F2023627800F7FEE7 /* main.m */,
 				63BE2F262023627800F7FEE7 /* EmployeeProjectUsingCoreData.xcdatamodeld */,
+				63C0227120243EF500199A18 /* TabBarController.h */,
+				63C0227220243EF500199A18 /* TabBarController.m */,
+				63C0227420243F2800199A18 /* EmployeeViewController.h */,
+				63C0227520243F2800199A18 /* EmployeeViewController.m */,
+				63C02279202470D500199A18 /* EmployeeDataViewController.h */,
+				63C0227A202470D500199A18 /* EmployeeDataViewController.m */,
+				63C0227C202492F000199A18 /* EmployeeDataPushViewController.h */,
+				63C0227D202492F000199A18 /* EmployeeDataPushViewController.m */,
 			);
 			path = EmployeeProjectUsingCoreData;
 			sourceTree = "<group>";
@@ -268,8 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C0227E202492F000199A18 /* EmployeeDataPushViewController.m in Sources */,
+				63C0227B202470D500199A18 /* EmployeeDataViewController.m in Sources */,
 				63BE2F222023627800F7FEE7 /* ViewController.m in Sources */,
 				63BE2F282023627800F7FEE7 /* EmployeeProjectUsingCoreData.xcdatamodeld in Sources */,
+				63C0227620243F2800199A18 /* EmployeeViewController.m in Sources */,
+				63C0227320243EF500199A18 /* TabBarController.m in Sources */,
 				63BE2F302023627800F7FEE7 /* main.m in Sources */,
 				63BE2F1F2023627800F7FEE7 /* AppDelegate.m in Sources */,
 			);

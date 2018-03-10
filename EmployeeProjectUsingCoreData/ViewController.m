@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title=@"Department";
+}
+
+-(NSManagedObjectContext *)getManagedObjectContext{
+    AppDelegate *deligate=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    NSManagedObjectContext *context=deligate.persistentContainer.viewContext;
+    return context;
 }
 
 
@@ -25,5 +31,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)btnActionDepatmentDataSave:(id)sender {
+    if ([_txtDepartmentName.text isEqualToString:@""]) {
+        [self addAlert:@"Please Enter Name"];
+    }else if ([_txtDepartmentID.text isEqualToString:@""]){
+        [self addAlert:@"Please Enter ID"];
+    }else{
+        NSEntityDescription *entity=[NSEntityDescription entityForName:@"Department" inManagedObjectContext:[self getManagedObjectContext]];
+        NSManagedObject *managedObject=[[NSManagedObject alloc]initWithEntity:entity insertIntoManagedObjectContext:[self getManagedObjectContext]];
+        [managedObject setValue:_txtDepartmentName.text forKey: @"departmentname"];
+        [managedObject setValue:[NSNumber numberWithInteger:[_txtDepartmentID.text intValue]] forKey:@"departmentid"];
+        NSError *error;
+        [[self getManagedObjectContext] save:&error];
+        
+        _txtDepartmentName.text=@"";
+        _txtDepartmentID.text=@"";
+    }
+}
+-(void)addAlert:(NSString *)message{
+    UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"Hi" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action=[UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *ok) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
+    [alert addAction:action];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end
